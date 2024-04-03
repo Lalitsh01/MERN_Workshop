@@ -1,0 +1,32 @@
+<!-- Form Handling -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Designing</title>
+</head>
+<body>
+    <h1>Enter Student Information</h1>
+    <!-- BACKEND....REST API: Representation ...json kae format data bhejna-->
+    <!--
+        post:POST is used to send data to a server to create/update a resource.
+        get :GET is used to request data from a specified resource.(data sent within url ,not secure ..body mae laga kahe bhejta h )
+    -->
+    <form action="#" method="post">  <!-- Action:#(jb koi backend na mtlb khud kho hee bhejega) method:get/post -->
+        <label for="username" >Enter username</label><br>
+        <input type="text" name="username" placeholder="Username"/><br>
+        <label for="password">Enter password</label><br>
+        <input type="password" name="password" placeholder="password"/><br>
+        <label for="password">Enter A Comment</label><br>
+        <textarea name="Comment" rows="10" cols="30" rows="10"></textarea><br>
+        <label for="gender">Select Gender: </label>
+        <select id="gender" name="Gender"> </select>
+        <option value="male">Male</option>
+        <option value="female">Female</option> 
+        
+        <input type="submit" value="login" name="login"/>
+        <input type="reset" value="clean" name="clean"/>
+    </form>
+</body>
+</html>
